@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: 'roboto-thin';
+  src: url(assets/font/roboto.thin.ttf);
+}
+
+@tailwind utilities;
+
+@layer base {
+  input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 100vw #1E000A inset;
+  }
+  input:-webkit-autofill{
+    -webkit-text-fill-color: white;
+  }
+}
+
+@layer utilities {
+  .bg-c{
+    background: linear-gradient(180deg, transparent, transparent, transparent, black);
+  }
+  .bg-c-2{
+    background: linear-gradient(180deg, black, transparent, transparent, black);
+  }
+  .bg-c-3{
+    background: linear-gradient(180deg, black, transparent, transparent, transparent);
+  }
+}
+
+#section-4::-webkit-scrollbar{
+  @apply hidden;
+}
